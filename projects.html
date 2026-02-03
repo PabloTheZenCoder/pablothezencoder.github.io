@@ -17,19 +17,50 @@
     <hr />
   </header>
 
-  <main>
-    <h2>Projects</h2>
-    <p>Coming soon.</p>
-  </main>
+ <main>
+  <h2>Selected Projects</h2>
 
-  <footer>
-    <hr />
-    <p>© <span id="year"></span> Patrick Lutz</p>
-  </footer>
+  <!-- GIS PARKS PROJECT -->
+  <section id="parks">
+    <h3>Chattanooga Park Accessibility (GIS)</h3>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    <p>
+      A spatial analysis project exploring walkable access to public parks across
+      Chattanooga and Hamilton County. The goal was to identify neighborhoods with
+      limited park access and provide demographic context to support conversations
+      around equitable investment in public space.
+    </p>
+
+    <p><strong>Methods & Tools</strong></p>
+    <ul>
+      <li>ArcGIS Pro (spatial joins, buffers, census tracts)</li>
+      <li>Hamilton County park and boundary shapefiles</li>
+      <li>ACS demographic data (income, population)</li>
+      <li>ArcGIS Online web application</li>
+    </ul>
+
+    <p>
+      I created half-mile walkability buffers around parks, joined them to census
+      tracts, and visualized which areas fall inside or outside walkable access.
+      Interactive pop-ups provide demographic context such as median household income,
+      allowing patterns of access and disparity to be explored spatially.
+    </p>
+
+    <p>
+      <strong>Why this matters:</strong>
+      This type of analysis can support planning decisions around where new parks
+      may be most impactful, and where existing spaces might benefit from targeted
+      investment based on population density and neighborhood characteristics.
+    </p>
+
+    <p>
+      <a href="https://arcg.is/0ae8bS" target="_blank" rel="noreferrer">
+        View interactive map
+      </a>
+    </p>
+  </section>
+
+  <hr />
+</main>
+
 
