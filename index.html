@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Patrick Lutz | Data Analytics Portfolio</title>
 </head>
 <body>
-  <h1>Patrick Lutz</h1>
-  <p>Data Analytics | GIS | Python | SQL</p>
-  <p>Portfolio coming soon.</p>
+  <header>
+    <h1>Patrick Lutz</h1>
+    <p>Data Analytics • GIS • Python • SQL</p>
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="resume.html">Resume</a> |
+      <a href="about.html">About</a>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <h2>Hi — I build practical, human-centered analytics.</h2>
+    <p>
+      I’m a graduate student in Data Analytics at UTC. I like building end-to-end projects:
+      scraping and cleaning data, analyzing it, and shipping clear visuals or tools that help people make decisions.
+    </p>
+
+    <h3>Featured</h3>
+    <ul>
+      <li><a href="projects.html#parks">Chattanooga Park Accessibility (GIS)</a></li>
+      <li><a href="projects.html#ecosystems">Entrepreneurial Ecosystems Text Pipeline</a></li>
+      <li><a href="projects.html#dashboards">Dashboards & Reporting</a></li>
+    </ul>
+
+    <p>
+      <strong>Email:</strong> <a href="mailto:patrick.t@patricktlutz.com">patrick.t@patricktlutz.com</a><br />
+      <strong>GitHub:</strong> <a href="https://github.com/pablothezencoder" target="_blank" rel="noreferrer">github.com/pablothezencoder</a><br />
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </p>
+  </main>
+
+  <footer>
+    <hr />
+    <p>© <span id="year"></span> Patrick Lutz</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
